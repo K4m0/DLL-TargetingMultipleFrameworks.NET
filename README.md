@@ -53,13 +53,41 @@ nuget pack YourClassLibraryProject.nuspec
 >- Para Profile259: 
 portable-net45+win8+wpa81+wp8
 
+9. Se agrega la dll creada, ubicada en la carpeta release a la carpeta anteriormente creada de acuerdo al perfil.
+
+[![](https://github.com/K4m0/DLL-TargetingMultipleFrameworks.NET/blob/master/10.PNG)](https://github.com/K4m0/DLL-TargetingMultipleFrameworks.NET/blob/master/10.PNG)
+
+10. Guardar modificaciones.
 
 Uso del paquete NuGet en aplicacion .NET Framework Core
 -------------
 
-<b id="11">1.</b> En el siguiente [link](https://dist.nuget.org/index.html) se encuentran todas las versiones de NuGet para descargar. [↩](#1)
+Antes de usar el paquete NuGet es importante haber creado una carpeta con el nombre **netcoreapp1.0** como indica en el paso 9 de la creacion del paquete.
 
-<b id="22">1.</b> En el siguiente [link](https://github.com/NuGetPackageExplorer/NuGetPackageExplorer) se encuentran las instrucciones de instalacion de NuGet Package Explorer [↩](#2)
+1. Instalar el paquete NuGet al proyecto con el **Administrador de paquetes NuGet**.
 
-<b id="33">1.</b> En el siguiente [link](https://portablelibraryprofiles.stephencleary.com/) se encuentran los ejemplos de los nombres de la carpeta a crear de acuerdo al perfil a usar. [↩](#3)
+[![](https://github.com/K4m0/DLL-TargetingMultipleFrameworks.NET/blob/master/11.PNG)](https://github.com/K4m0/DLL-TargetingMultipleFrameworks.NET/blob/master/11.PNG)
+
+2. Instalar el paquete NuGet **Microsoft.NETCore.Portable.Compatibility**
+
+[![](https://github.com/K4m0/DLL-TargetingMultipleFrameworks.NET/blob/master/12.PNG)](https://github.com/K4m0/DLL-TargetingMultipleFrameworks.NET/blob/master/12.PNG)
+
+Uso del paquete NuGet en aplicacion Xamarin
+-------------
+Antes de usar el paquete NuGet es importante haber creado una carpeta con el nombre **portable-net45+win8+wpa81+wp8** como indica en el paso 9 de la creacion del paquete.
+
+1. Instalar el paquete NuGet en cada uno de los proyectos creados del proyecto de Xamarin y en los cualse se vaya a usar.
+
+> **Ejemplo:**
+>- TestXamarinApp(Portable) 
+>- TestXamarinApp.Android 
+>- TestXamarinApp.iOS
+>- TestXamarinApp.WinPhone
+
+
+<b id="11">1.</b> En el siguiente [link](https://dist.nuget.org/index.html) se encuentran todas las versiones de **NuGet** para descargar. [↩](#1)
+
+<b id="22">1.</b> En el siguiente [link](https://github.com/NuGetPackageExplorer/NuGetPackageExplorer) se encuentran las instrucciones de instalacion de **NuGet Package Explorer** [↩](#2)
+
+<b id="33">1.</b> En el siguiente [link](https://portablelibraryprofiles.stephencleary.com/) se encuentran los ejemplos de los **nombres de la carpeta** a crear de acuerdo al perfil a usar. [↩](#3)
 
