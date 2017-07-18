@@ -1,0 +1,5 @@
+c:\users\jpulidom\documents\visual studio 2015\Projects\ClassLibraryTest\ClassLibraryTest\bin\Release\ClassLibraryTest.dll
+c:\users\jpulidom\documents\visual studio 2015\Projects\ClassLibraryTest\ClassLibraryTest\bin\Release\ClassLibraryTest.pdb
+c:\users\jpulidom\documents\visual studio 2015\Projects\ClassLibraryTest\ClassLibraryTest\obj\Release\ClassLibraryTest.csprojResolveAssemblyReference.cache
+c:\users\jpulidom\documents\visual studio 2015\Projects\ClassLibraryTest\ClassLibraryTest\obj\Release\ClassLibraryTest.dll
+c:\users\jpulidom\documents\visual studio 2015\Projects\ClassLibraryTest\ClassLibraryTest\obj\Release\ClassLibraryTest.pdb
