@@ -11,9 +11,9 @@ Creación de la solución
 
 1. Iniciar Visual Studio y seleccionar **File > New > Project ** (Ctrl+Shift+N).
 2. Seleccionar la plantilla **Windows > Class library**.
-[![](https://github.com/K4m0/DLL-TargetingMultipleFrameworks.NET/blob/master/1.png)](https://github.com/K4m0/DLL-TargetingMultipleFrameworks.NET/blob/master/1.png)
+[![](https://github.com/K4m0/DLL-TargetingMultipleFrameworks.NET/blob/master/Img/1.png)](https://github.com/K4m0/DLL-TargetingMultipleFrameworks.NET/blob/master/Img/1.png)
 3.  Generar código.
-[![](https://github.com/K4m0/DLL-TargetingMultipleFrameworks.NET/blob/master/2.PNG)](https://github.com/K4m0/DLL-TargetingMultipleFrameworks.NET/blob/master/2.PNG)
+[![](https://github.com/K4m0/DLL-TargetingMultipleFrameworks.NET/blob/master/Img/2.PNG)](https://github.com/K4m0/DLL-TargetingMultipleFrameworks.NET/blob/master/Img/2.PNG)
 4. Compilar como **Release**.
 
 Creacion de paquete NuGet
@@ -25,7 +25,7 @@ Creacion de paquete NuGet
 ```
 nuget spec
 ```
-[![](https://github.com/K4m0/DLL-TargetingMultipleFrameworks.NET/blob/master/3.PNG)](https://github.com/K4m0/DLL-TargetingMultipleFrameworks.NET/blob/master/3.PNG)
+[![](https://github.com/K4m0/DLL-TargetingMultipleFrameworks.NET/blob/master/Img/3.PNG)](https://github.com/K4m0/DLL-TargetingMultipleFrameworks.NET/blob/master/Img/3.PNG)
 
 4. Modificar archivo de especificacion.
 5. Crear paquete NuGet.
@@ -33,21 +33,21 @@ nuget spec
 ```
 nuget pack YourClassLibraryProject.nuspec
 ```
-[![](https://github.com/K4m0/DLL-TargetingMultipleFrameworks.NET/blob/master/4.PNG)](https://github.com/K4m0/DLL-TargetingMultipleFrameworks.NET/blob/master/4.PNG)
-[![](https://github.com/K4m0/DLL-TargetingMultipleFrameworks.NET/blob/master/5.PNG)](https://github.com/K4m0/DLL-TargetingMultipleFrameworks.NET/blob/master/5.PNG)
+[![](https://github.com/K4m0/DLL-TargetingMultipleFrameworks.NET/blob/master/Img/4.PNG)](https://github.com/K4m0/DLL-TargetingMultipleFrameworks.NET/blob/master/Img/4.PNG)
+[![](https://github.com/K4m0/DLL-TargetingMultipleFrameworks.NET/blob/master/Img/5.PNG)](https://github.com/K4m0/DLL-TargetingMultipleFrameworks.NET/blob/master/Img/5.PNG)
 
 6. Iniciar **NuGet Package Explorer**<sup id="2">[2](#22)</sup>, abrir y modificar paquete.
 
-[![](https://github.com/K4m0/DLL-TargetingMultipleFrameworks.NET/blob/master/6.PNG)](https://github.com/K4m0/DLL-TargetingMultipleFrameworks.NET/blob/master/6.PNG)
+[![](https://github.com/K4m0/DLL-TargetingMultipleFrameworks.NET/blob/master/Img/6.PNG)](https://github.com/K4m0/DLL-TargetingMultipleFrameworks.NET/blob/master/Img/6.PNG)
 
 7. Agregar carpeta lib
-[![](https://github.com/K4m0/DLL-TargetingMultipleFrameworks.NET/blob/master/7.PNG)](https://github.com/K4m0/DLL-TargetingMultipleFrameworks.NET/blob/master/7.PNG)
+[![](https://github.com/K4m0/DLL-TargetingMultipleFrameworks.NET/blob/master/Img/7.PNG)](https://github.com/K4m0/DLL-TargetingMultipleFrameworks.NET/blob/master/Img/7.PNG)
 
 8. Agregar carpeta con el nombre del **Target Framework**<sup id="3">[3](#33)</sup> del proyecto en el que se va a usar.
 
-[![](https://github.com/K4m0/DLL-TargetingMultipleFrameworks.NET/blob/master/8.png)](https://github.com/K4m0/DLL-TargetingMultipleFrameworks.NET/blob/master/8.png)
+[![](https://github.com/K4m0/DLL-TargetingMultipleFrameworks.NET/blob/master/Img/8.png)](https://github.com/K4m0/DLL-TargetingMultipleFrameworks.NET/blob/master/Img/8.png)
 
-[![](https://github.com/K4m0/DLL-TargetingMultipleFrameworks.NET/blob/master/9.PNG)](https://github.com/K4m0/DLL-TargetingMultipleFrameworks.NET/blob/master/9.PNG)
+[![](https://github.com/K4m0/DLL-TargetingMultipleFrameworks.NET/blob/master/Img/9.PNG)](https://github.com/K4m0/DLL-TargetingMultipleFrameworks.NET/blob/master/Img/9.PNG)
 
 > **Ejemplo:**
 >- Para Profile259: 
@@ -55,7 +55,7 @@ portable-net45+win8+wpa81+wp8
 
 9. Se agrega la dll creada, ubicada en la carpeta release a la carpeta anteriormente creada de acuerdo al perfil.
 
-[![](https://github.com/K4m0/DLL-TargetingMultipleFrameworks.NET/blob/master/10.PNG)](https://github.com/K4m0/DLL-TargetingMultipleFrameworks.NET/blob/master/10.PNG)
+[![](https://github.com/K4m0/DLL-TargetingMultipleFrameworks.NET/blob/master/Img/10.PNG)](https://github.com/K4m0/DLL-TargetingMultipleFrameworks.NET/blob/master/Img/10.PNG)
 
 10. Guardar modificaciones.
 
@@ -66,11 +66,11 @@ Antes de usar el paquete NuGet es importante haber creado una carpeta con el nom
 
 1. Instalar el paquete NuGet al proyecto con el **Administrador de paquetes NuGet**.
 
-[![](https://github.com/K4m0/DLL-TargetingMultipleFrameworks.NET/blob/master/11.PNG)](https://github.com/K4m0/DLL-TargetingMultipleFrameworks.NET/blob/master/11.PNG)
+[![](https://github.com/K4m0/DLL-TargetingMultipleFrameworks.NET/blob/master/Img/11.PNG)](https://github.com/K4m0/DLL-TargetingMultipleFrameworks.NET/blob/master/Img/11.PNG)
 
 2. Instalar el paquete NuGet **Microsoft.NETCore.Portable.Compatibility**
 
-[![](https://github.com/K4m0/DLL-TargetingMultipleFrameworks.NET/blob/master/12.PNG)](https://github.com/K4m0/DLL-TargetingMultipleFrameworks.NET/blob/master/12.PNG)
+[![](https://github.com/K4m0/DLL-TargetingMultipleFrameworks.NET/blob/master/Img/12.PNG)](https://github.com/K4m0/DLL-TargetingMultipleFrameworks.NET/blob/master/Img/12.PNG)
 
 Uso del paquete NuGet en aplicacion Xamarin
 -------------
