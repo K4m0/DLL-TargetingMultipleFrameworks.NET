@@ -49,6 +49,7 @@ Creacion de paquete NuGet
 
 5. En caso de querer verificar la configuracion del archivo de especificaciones abrir el paquete NuGet creado con **NuGet Package Explorer**<sup id="3">[3](#33)</sup>
 
+[![](https://github.com/K4m0/DLL-TargetingMultipleFrameworks.NET/blob/master/Img/4.png)](https://github.com/K4m0/DLL-TargetingMultipleFrameworks.NET/blob/master/Img/4.png)
 
 Uso del paquete NuGet en aplicacion .NET Framework Core
 -------------
