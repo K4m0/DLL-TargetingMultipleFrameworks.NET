@@ -64,8 +64,6 @@ Uso del paquete NuGet en aplicacion .NET Framework Core
 
 Uso del paquete NuGet en aplicacion Xamarin
 -------------
-Antes de usar el paquete NuGet es importante haber creado una carpeta con el nombre **portable-net45+win8+wpa81+wp8** como indica en el paso 9 de la creacion del paquete.
-
 1. Instalar el paquete NuGet en cada uno de los proyectos creados del proyecto de Xamarin y en los cualse se vaya a usar.
 
 > **Ejemplo:**
