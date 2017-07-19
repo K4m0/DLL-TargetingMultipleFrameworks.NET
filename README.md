@@ -1,3 +1,9 @@
+Pre-Requisitos
+===================
+
+1. Crear una carpeta `C:\Temp` de trabajo.
+2. Descargar **NuGet**<sup id="1">[1](#11)</sup> y crear una variable de entorno llamada **NUGET_PATH** con la ruta del .exe.
+
 Creacion de librerias multi framework .NET
 ===================
 
@@ -9,60 +15,43 @@ En esta documentacion se describre brevemente la creacion de una unica libreria 
 Creación de la solución
 -------------
 
-1. Iniciar Visual Studio y seleccionar **File > New > Project ** (Ctrl+Shift+N).
+1. Iniciar Visual Studio y seleccionar **File > New > Project** (Ctrl+Shift+N) con **.NET Framework 4.5.2**.
 2. Seleccionar la plantilla **Windows > Class library**.
+
 [![](https://github.com/K4m0/DLL-TargetingMultipleFrameworks.NET/blob/master/Img/1.png)](https://github.com/K4m0/DLL-TargetingMultipleFrameworks.NET/blob/master/Img/1.png)
-3.  Generar código.
+
+3.  Generar el código del cual se va a componer la dll.
+
 [![](https://github.com/K4m0/DLL-TargetingMultipleFrameworks.NET/blob/master/Img/2.PNG)](https://github.com/K4m0/DLL-TargetingMultipleFrameworks.NET/blob/master/Img/2.PNG)
+
 4. Compilar como **Release**.
 
 Creacion de paquete NuGet
 -------------
-1. Descargar **NuGet**<sup id="1">[1](#11)</sup> y copiar en carpeta del proyecto anteriormente creado.
-2. Abrir una consola en la carpeta del proyecto (Shift +  RigthClick).
-3. Generar el archivo de especificacion (.nuspec).
+1. Crear una carpeta llamada **Installer** en la raiz del proyecto (En este caso `C:\Temp\ClassLibraryTest\ClassLibraryTest`).
+2. Copiar el script **Create-NuGet.ps1** en la carpeta **Installer**
 
+3. Modificar script en el numeral **1** cambiando los valores de informacion del archivo de especificaciones (.nuspec) y los **Target Framework**<sup id="2">[2](#22)</sup> sobre los cuales sera compatible el paquete NuGet a crear.
+
+[![](https://github.com/K4m0/DLL-TargetingMultipleFrameworks.NET/blob/master/Img/3.png)](https://github.com/K4m0/DLL-TargetingMultipleFrameworks.NET/blob/master/Img/3.png)
+
+4. Ejecutar el script **Create-NuGet.ps1** en una consola de Powershell (Preferiblemente como administrador).
+
+> Ejemplo de ejecución: Creación archivo de especificaciones (.nuspec) unicamente
 ```
-nuget spec
+   .\Create-NuGet.ps1
 ```
-[![](https://github.com/K4m0/DLL-TargetingMultipleFrameworks.NET/blob/master/Img/3.PNG)](https://github.com/K4m0/DLL-TargetingMultipleFrameworks.NET/blob/master/Img/3.PNG)
 
-4. Modificar archivo de especificacion.
-5. Crear paquete NuGet.
-
+> Ejemplo de ejecución: Creación archivo de especificaciones (.nuspec) y paquete NuGet
 ```
-nuget pack YourClassLibraryProject.nuspec
+   .\Create-NuGet.ps1 -CreateNugetPackage $true
 ```
-[![](https://github.com/K4m0/DLL-TargetingMultipleFrameworks.NET/blob/master/Img/4.PNG)](https://github.com/K4m0/DLL-TargetingMultipleFrameworks.NET/blob/master/Img/4.PNG)
-[![](https://github.com/K4m0/DLL-TargetingMultipleFrameworks.NET/blob/master/Img/5.PNG)](https://github.com/K4m0/DLL-TargetingMultipleFrameworks.NET/blob/master/Img/5.PNG)
 
-6. Iniciar **NuGet Package Explorer**<sup id="2">[2](#22)</sup>, abrir y modificar paquete.
+5. En caso de querer verificar la configuracion del archivo de especificaciones abrir el paquete NuGet creado con **NuGet Package Explorer**<sup id="3">[3](#33)</sup>
 
-[![](https://github.com/K4m0/DLL-TargetingMultipleFrameworks.NET/blob/master/Img/6.PNG)](https://github.com/K4m0/DLL-TargetingMultipleFrameworks.NET/blob/master/Img/6.PNG)
-
-7. Agregar carpeta lib
-[![](https://github.com/K4m0/DLL-TargetingMultipleFrameworks.NET/blob/master/Img/7.PNG)](https://github.com/K4m0/DLL-TargetingMultipleFrameworks.NET/blob/master/Img/7.PNG)
-
-8. Agregar carpeta con el nombre del **Target Framework**<sup id="3">[3](#33)</sup> del proyecto en el que se va a usar.
-
-[![](https://github.com/K4m0/DLL-TargetingMultipleFrameworks.NET/blob/master/Img/8.png)](https://github.com/K4m0/DLL-TargetingMultipleFrameworks.NET/blob/master/Img/8.png)
-
-[![](https://github.com/K4m0/DLL-TargetingMultipleFrameworks.NET/blob/master/Img/9.PNG)](https://github.com/K4m0/DLL-TargetingMultipleFrameworks.NET/blob/master/Img/9.PNG)
-
-> **Ejemplo:**
->- Para Profile259: 
-portable-net45+win8+wpa81+wp8
-
-9. Se agrega la dll creada, ubicada en la carpeta release a la carpeta anteriormente creada de acuerdo al perfil.
-
-[![](https://github.com/K4m0/DLL-TargetingMultipleFrameworks.NET/blob/master/Img/10.PNG)](https://github.com/K4m0/DLL-TargetingMultipleFrameworks.NET/blob/master/Img/10.PNG)
-
-10. Guardar modificaciones.
 
 Uso del paquete NuGet en aplicacion .NET Framework Core
 -------------
-
-Antes de usar el paquete NuGet es importante haber creado una carpeta con el nombre **netcoreapp1.0** como indica en el paso 9 de la creacion del paquete.
 
 1. Instalar el paquete NuGet al proyecto con el **Administrador de paquetes NuGet**.
 
@@ -84,10 +73,12 @@ Antes de usar el paquete NuGet es importante haber creado una carpeta con el nom
 >- TestXamarinApp.iOS
 >- TestXamarinApp.WinPhone
 
+Enlaces relacionados
+===================
 
 <b id="11">1.</b> En el siguiente [link](https://dist.nuget.org/index.html) se encuentran todas las versiones de **NuGet** para descargar. [↩](#1)
 
-<b id="22">1.</b> En el siguiente [link](https://github.com/NuGetPackageExplorer/NuGetPackageExplorer) se encuentran las instrucciones de instalacion de **NuGet Package Explorer** [↩](#2)
+<b id="22">2.</b> En el siguiente [link](https://portablelibraryprofiles.stephencleary.com/) se encuentran los ejemplos de los **nombres de la carpeta** a crear de acuerdo al perfil a usar. [↩](#2)
 
-<b id="33">1.</b> En el siguiente [link](https://portablelibraryprofiles.stephencleary.com/) se encuentran los ejemplos de los **nombres de la carpeta** a crear de acuerdo al perfil a usar. [↩](#3)
+<b id="33">3.</b> En el siguiente [link](https://github.com/NuGetPackageExplorer/NuGetPackageExplorer) se encuentran las instrucciones de instalacion de **NuGet Package Explorer** [↩](#3)
 
