@@ -64,7 +64,7 @@ Uso del paquete NuGet en aplicacion .NET Framework Core
 
 Uso del paquete NuGet en aplicacion Xamarin
 -------------
-1. Instalar el paquete NuGet en cada uno de los proyectos creados del proyecto de Xamarin y en los cualse se vaya a usar.
+1. Instalar el paquete NuGet en cada uno de los proyectos creados del proyecto de Xamarin y en los cuales se vaya a usar.
 
 > **Ejemplo:**
 >- TestXamarinApp(Portable) 
