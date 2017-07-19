@@ -76,9 +76,9 @@ Antes de usar el paquete NuGet es importante haber creado una carpeta con el nom
 Enlaces relacionados
 ===================
 
-<b id="11">1.</b> En el siguiente [link](https://dist.nuget.org/index.html) se encuentran todas las versiones de **NuGet** para descargar. [↩](#1)
+<b id="11">1.</b> [**Descargar NuGet**](https://dist.nuget.org/index.html). [↩](#1)
 
-<b id="22">2.</b> En el siguiente [link](https://portablelibraryprofiles.stephencleary.com/) se encuentran los ejemplos de los **nombres de la carpeta** a crear de acuerdo al perfil a usar. [↩](#2)
+<b id="22">2.</b> [**NuGet Target Framework**](https://portablelibraryprofiles.stephencleary.com/). [↩](#2)
 
-<b id="33">3.</b> En el siguiente [link](https://github.com/NuGetPackageExplorer/NuGetPackageExplorer) se encuentran las instrucciones de instalacion de **NuGet Package Explorer** [↩](#3)
+<b id="33">3.</b> [**Descargar NuGet Package Explorer**](https://github.com/NuGetPackageExplorer/NuGetPackageExplorer).[↩](#3)
 
