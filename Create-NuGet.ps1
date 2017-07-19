@@ -138,7 +138,8 @@ try {
     if ($CreateNugetPackage) 
     {
         $CompileNugetCommand = '& "{0}" pack "{1}" -OutputDirectory "{2}"' -f $NugetPath, $NuspecFilePath, $DestinationPath
-        Invoke-Expression -Command $CompileNugetCommand | Write-Info
+        Invoke-Expression -Command $CompileNugetCommand 
+        "Package Created"| Write-Info
     }
     
 }
